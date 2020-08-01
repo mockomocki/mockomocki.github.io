@@ -1,3 +1,3 @@
 # mockomocki.github.io
 
-lukas.bike
+http://lukas.bike/. 
