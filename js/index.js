@@ -4,7 +4,7 @@ const apikey = "6000d3888cd1295a505f6786c114500a";
 const url = "https://api.themoviedb.org/3/search/movie/?api_key=6000d3888cd1295a505f6786c114500a";
 const imageurl = "https://image.tmdb.org/t/p/w185";
 const cors = "https://cors-anywhere.herokuapp.com/";
-const noposter = "https://lh3.googleusercontent.com/proxy/QS0FnZ1acXDykKlUL8km6GHifqeu-U4EGMJdFWgmfsubDgpiy33CzmQeWUb3ChP1D7rW-Mc52DWLIennMWc-_rXokT1YNrAKAvoTloRfNuqmuRArB55mwqI";
+const noposter = "https://i.ibb.co/HYfY6vQ/noposter.jpg";
 
 const searchbutton = document.querySelector('#search');
 const inputelement = document.querySelector('#inputvalue');
