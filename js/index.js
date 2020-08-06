@@ -3,6 +3,7 @@
 const apikey = "6000d3888cd1295a505f6786c114500a";
 const url = "http://api.themoviedb.org/3/search/movie/?api_key=6000d3888cd1295a505f6786c114500a";
 const imageurl = "http://image.tmdb.org/t/p/w185";
+const cors = "https://cors-anywhere.herokuapp.com/"
 
 const searchbutton = document.querySelector('#search');
 const inputelement = document.querySelector('#inputvalue');
@@ -15,7 +16,7 @@ var descriptiontext = document.getElementById("descriptiontext");
 searchbutton.onclick = function (event) {
     event.preventDefault();
     const value = inputelement.value;
-    const newurl = url + '&query=' + value;
+    const newurl = cors + url + '&query=' + value;
 
 
     fetch(newurl)
