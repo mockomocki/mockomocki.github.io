@@ -10,9 +10,10 @@ const searchbutton = document.querySelector('#search');
 const inputelement = document.querySelector('#inputvalue');
 
 
-var posterimg = document.createElement("img");
+var posterimg = document.getElementById("poster");
 var titletext = document.getElementById("titletext");
 var descriptiontext = document.getElementById("descriptiontext");
+var ratingtext = document.getElementById("ratingtext");
 
 searchbutton.onclick = function (event) {
     event.preventDefault();
@@ -24,27 +25,35 @@ searchbutton.onclick = function (event) {
         .then((res) => res.json())
         .then((data) => {
             //  data.results[]
+            if(data.results[0] === undefined){
+                alert("no movie found, check your spelling")
+            }
             poster = data.results[0].poster_path;
             if (poster === null) {
                 posterimg.setAttribute("src", noposter)
-            }else {
+            }else{
                 posterimg.setAttribute("src", imageurl+poster);
             }
             title = data.results[0].original_title;
             description = data.results[0].overview;
+            rating = data.results[0].vote_average;
+            if(data.results[0].vote_count === 0){
+                document.getElementById("ratingtext").innerHTML = "there is no rating of this movie";
+            }else{
+                document.getElementById("ratingtext").innerHTML = "the ratings for this move is " + rating + " out of 10";
+            }
             console.log(data);
 
-            document.getElementById("placehere").appendChild(posterimg);
+            document.getElementById("poster").innerHTML = posterimg;
             document.getElementById("titletext").innerHTML = title;
-            document.getElementById("descriptiontext").innerHTML = description
+            document.getElementById("descriptiontext").innerHTML = description;
+
 
         })
         .catch((error) => {
             console.log(error);
         });
 };
-
-
 
 
 
