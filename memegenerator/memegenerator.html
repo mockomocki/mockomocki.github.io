@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>MEMEGENERATOR</title>
+    <meta name="viewport" content="width=device-width, inital-scale=1.0">
+    <link rel="icon" type="image/png" sizes="32x32" href="../icon/movieicon.png">
+    <link rel="stylesheet" type="text/css" href="../css/memegenerator.css">
+    <link rel="stylesheet" type="text/css" href="../css/topcorner.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+
+<body>
+<h1>MEMEGENERATOR</h1>
+
+
+
+<button>Add Text</button>
+<span></span>
+
+<button onclick="DownloadCanvasAsImage()">Download Image</button>
+
+<button onclick="IncreaeFontSize()">Increease Font Size</button>
+<button onclick="DecreaeFontSize()">Decreease Font Size</button>
+
+<br>
+
+<label for="inputvalue"></label><input type="text" id="inputvalue" placeholder="first line of text">
+<label for="inputvalue2"></label><input type="text" id="inputvalue2" placeholder="second line of text">
+
+
+<div style="text-align: center;"><canvas width="500" height="500" id="canvas1"></canvas></div>
+
+
+
+
+
+<div class="topcorner"><a href="../index.html">go back</a></div>
+
+<script src="memegenerator.js"></script>
+
+
+
+</body>
+</html>

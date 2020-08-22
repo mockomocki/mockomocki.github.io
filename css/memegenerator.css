@@ -1,0 +1,22 @@
+body{
+    background-color: #4b4b4b;
+}
+
+h1,a{
+    color: white;
+}
+a{
+    color:white;
+}
+
+input{
+    margin-top: 10px;
+}
+
+ul{
+    display:inline;
+}
+
+canvas {
+    max-width: 100%
+}
