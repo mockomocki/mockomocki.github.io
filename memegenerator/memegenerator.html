@@ -14,20 +14,25 @@
 <h1>MEMEGENERATOR</h1>
 
 
-
+<div>
 <button>Add Text</button>
-<span></span>
+<div>
 
+</div>
 <button onclick="DownloadCanvasAsImage()">Download Image</button>
-
 <button onclick="IncreaeFontSize()">Increease Font Size</button>
 <button onclick="DecreaeFontSize()">Decreease Font Size</button>
+</div>
 
-<br>
-
+<div>
 <label for="inputvalue"></label><input type="text" id="inputvalue" placeholder="first line of text">
 <label for="inputvalue2"></label><input type="text" id="inputvalue2" placeholder="second line of text">
+</div>
 
+<div id="memetemplatesmall">
+    <a onclick="SelecteDrake()"><img src="meme11.png" alt="drake select" width="190" height="190"></a>
+    <a onclick="SelecteHonung()"><img src="meme12.png" alt="honung select" width="190" height="190"></a>
+</div>
 
 <div style="text-align: center;"><canvas width="500" height="500" id="canvas1"></canvas></div>
 
@@ -43,3 +48,4 @@
 
 </body>
 </html>
+

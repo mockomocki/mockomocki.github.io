@@ -1,6 +1,9 @@
 const inputelement = document.querySelector('#inputvalue');
 const inputelement2 = document.querySelector('#inputvalue2');
 let font = 10;
+let imagesource = "";
+
+
 
 
  function drawImage(){
@@ -13,9 +16,9 @@ let font = 10;
          ctx.fillText(inputelement.value,275,125);
          ctx.fillText(inputelement2.value,275,375);
      };
-     img.src = "meme11.png";
+     img.src = imagesource;
  }
- drawImage();
+
 
  $("button").click(drawImage);
 
@@ -32,10 +35,19 @@ let font = 10;
 
  function IncreaeFontSize() {
     font += 5;
-    console.log(font)
+    console.log("hello")
 }
 
 function DecreaeFontSize() {
     font -= 5;
-    console.log(font)
+}
+
+function SelecteDrake() {
+    imagesource = "meme11.png";
+    drawImage()
+}
+
+function SelecteHonung() {
+    imagesource = "meme12.png";
+    drawImage()
 }
