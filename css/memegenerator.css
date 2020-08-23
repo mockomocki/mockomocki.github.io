@@ -22,8 +22,26 @@ canvas {
 }
 
 #memetemplatesmall{
-    margin-top: 20px;
+    margin-top: 5px;
+    margin-right: 5px;
     width: auto;
     height: auto;
 }
 
+#memetemplatesmall2{
+    margin-top: 5px;
+    margin-right: 5px;
+    width: auto;
+    height: auto;
+}
+
+.example-div {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+    position: absolute;
+}
+
+.fontbutton{
+    margin-top: 10px;
+}
