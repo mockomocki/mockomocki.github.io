@@ -23,5 +23,12 @@ canvas {
 
 #memetemplatesmall{
     margin-top: 20px;
+    width: auto;
+    height: auto;
 }
 
+#test {
+    width: 500px;
+    height:500px;
+    margin: 0 auto;
+}

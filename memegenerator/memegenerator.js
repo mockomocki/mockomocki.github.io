@@ -67,3 +67,4 @@ function SelecteHonung() {
     clearinputvalue();
     drawImage()
 }
+
