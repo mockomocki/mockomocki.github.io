@@ -13,6 +13,23 @@ var meme15 = document.getElementById('meme15');
 var meme16 = document.getElementById('meme16');
 var canvascenterdiv = document.getElementById("centercanvasdiv");
 var canvaswidthandheight = 500;
+var yes80 = 80;
+var yes320 = 320;
+var yes40neg = -40;
+var yes130 = 130;
+var yes300 = 300;
+var yes160 = 160;
+var yes200 = 200;
+var yes340 = 340;
+var yes230 = 230;
+var yes120 = 120;
+var yes220 = 220;
+var yes100 = 100;
+var yes60 = 60;
+var yes270 = 270;
+var yes250 = 250;
+var yes20 = 20;
+
 
 
 function deafultfont() {
@@ -54,43 +71,43 @@ function memefont() {
      if(imagesource === "meme13.png"){
          img.onload = function(){
              ctx.drawImage(img, 0, 0, canvaswidthandheight, canvaswidthandheight);
-             canvasTxt.drawText(ctx, text, 0, -40, 230, 200);
-             canvasTxt.drawText(ctx, text2, 0, 80, 230, 200);
-             canvasTxt.drawText(ctx, text3, 0, 200, 230, 200);
-             canvasTxt.drawText(ctx, text4, 0, 320, 230, 200);
+             canvasTxt.drawText(ctx, text, 0,  yes40neg, yes230, yes200);
+             canvasTxt.drawText(ctx, text2, 0, yes80, yes230, yes200);
+             canvasTxt.drawText(ctx, text3, 0, yes200, yes230, yes200);
+             canvasTxt.drawText(ctx, text4, 0, yes320, yes230, yes200);
 
          };
          img.src = imagesource;
      }else if (imagesource === "meme14.png"){
          img.onload = function(){
              ctx.drawImage(img, 0, 0, canvaswidthandheight, canvaswidthandheight);
-             canvasTxt.drawText(ctx, text, 0, -40, 230, 200);
-             canvasTxt.drawText(ctx, text2, 0, 130, 230, 200);
-             canvasTxt.drawText(ctx, text3, 0, 300, 230, 200);
+             canvasTxt.drawText(ctx, text, 0, yes40neg, yes230, yes200);
+             canvasTxt.drawText(ctx, text2, 0, yes130, yes230, yes200);
+             canvasTxt.drawText(ctx, text3, 0, yes300, yes230, yes200);
 
          };
          img.src = imagesource;
      }else if (imagesource === "meme15.png"){
          img.onload = function(){
              ctx.drawImage(img, 0, 0, canvaswidthandheight, canvaswidthandheight);
-             canvasTxt.drawText(ctx, text, 200, 160, 120, 220);
-             canvasTxt.drawText(ctx, text2, 340, 160, 120, 200);
+             canvasTxt.drawText(ctx, text, yes200, yes160, yes120, yes220);
+             canvasTxt.drawText(ctx, text2, yes340, yes160, yes120, yes200);
 
          };
          img.src = imagesource;
      }else if (imagesource === "meme16.png"){
          img.onload = function(){
              ctx.drawImage(img, 0, 0, canvaswidthandheight, canvaswidthandheight);
-             canvasTxt.drawText(ctx, text, 60, 250, 120, 100);
-             canvasTxt.drawText(ctx, text2, 220, 20, 120, 100);
+             canvasTxt.drawText(ctx, text, yes60, yes250, yes120, yes100);
+             canvasTxt.drawText(ctx, text2, yes220, yes20, yes120, yes100);
 
          };
          img.src = imagesource;
      }else {
          img.onload = function(){
              ctx.drawImage(img, 0, 0, canvaswidthandheight, canvaswidthandheight);
-             canvasTxt.drawText(ctx, text, 250, 20, 230, 200);
-             canvasTxt.drawText(ctx, text2, 250, 270, 230, 200);
+             canvasTxt.drawText(ctx, text, yes250, yes20, yes230, yes200);
+             canvasTxt.drawText(ctx, text2, yes250, yes270, yes230, yes200);
 
          };
          img.src = imagesource;
@@ -221,8 +238,24 @@ if(mobiletrue === true){
     canvaswidthandheight = 250;
 
     var x = document.getElementsByTagName("button");
-    for (var i = 0; i < x.length; i++) {
+    for ( i = 0; i < x.length; i++) {
         x[i].style.marginTop = "1vw";
     }
 
+     yes80 = 80/2;
+     yes320 = 320/2;
+     yes40neg = -40/2;
+     yes130 = 130/2;
+     yes300 = 300/2;
+     yes160 = 160/2;
+     yes200 = 200/2;
+     yes340 = 340/2;
+     yes230 = 230/2;
+     yes120 = 120/2;
+     yes220 = 220/2;
+     yes100 = 100/2;
+     yes60 = 60/2;
+     yes270 = 270/2;
+     yes250 = 250/2;
+     yes20 = 20/2;
 }
