@@ -1,5 +1,1 @@
-# mockomocki.github.io
-
-http://lukas.bike/
-
-
+https://lukas.bike/
