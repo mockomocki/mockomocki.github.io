@@ -209,3 +209,5 @@ if(/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigat
     document.getElementById('h1meme').style.fontSize = 'large';
 }
 
+
+
