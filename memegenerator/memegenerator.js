@@ -54,19 +54,19 @@ function memefont() {
      if(imagesource === "meme13.png"){
          img.onload = function(){
              ctx.drawImage(img, 0, 0, canvaswidthandheight, canvaswidthandheight);
-             canvasTxt.drawText(ctx, text, 0, -40, 250, 200);
-             canvasTxt.drawText(ctx, text2, 0, 80, 250, 200);
-             canvasTxt.drawText(ctx, text3, 0, 200, 250, 200);
-             canvasTxt.drawText(ctx, text4, 0, 320, 250, 200);
+             canvasTxt.drawText(ctx, text, 0, -40, 230, 200);
+             canvasTxt.drawText(ctx, text2, 0, 80, 230, 200);
+             canvasTxt.drawText(ctx, text3, 0, 200, 230, 200);
+             canvasTxt.drawText(ctx, text4, 0, 320, 230, 200);
 
          };
          img.src = imagesource;
      }else if (imagesource === "meme14.png"){
          img.onload = function(){
              ctx.drawImage(img, 0, 0, canvaswidthandheight, canvaswidthandheight);
-             canvasTxt.drawText(ctx, text, 0, -40, 250, 200);
-             canvasTxt.drawText(ctx, text2, 0, 130, 250, 200);
-             canvasTxt.drawText(ctx, text3, 0, 300, 250, 200);
+             canvasTxt.drawText(ctx, text, 0, -40, 230, 200);
+             canvasTxt.drawText(ctx, text2, 0, 130, 230, 200);
+             canvasTxt.drawText(ctx, text3, 0, 300, 230, 200);
 
          };
          img.src = imagesource;
@@ -89,8 +89,8 @@ function memefont() {
      }else {
          img.onload = function(){
              ctx.drawImage(img, 0, 0, canvaswidthandheight, canvaswidthandheight);
-             canvasTxt.drawText(ctx, text, 250, 20, 250, 200);
-             canvasTxt.drawText(ctx, text2, 250, 270, 250, 200);
+             canvasTxt.drawText(ctx, text, 250, 20, 230, 200);
+             canvasTxt.drawText(ctx, text2, 250, 270, 230, 200);
 
          };
          img.src = imagesource;
@@ -219,4 +219,10 @@ if(mobiletrue === true){
     document.getElementById('h1meme').style.fontSize = 'large';
 
     canvaswidthandheight = 250;
+
+    var x = document.getElementsByTagName("button");
+    for (var i = 0; i < x.length; i++) {
+        x[i].style.marginTop = "1vw";
+    }
+
 }
