@@ -206,5 +206,6 @@ if(/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigat
     meme16.height = meme16.height/2;
 
     canvascenterdiv.classList.remove("example-div");
+    document.getElementById('h1meme').style.fontSize = 'large';
 }
 
