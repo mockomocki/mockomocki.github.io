@@ -4,7 +4,14 @@ const inputelement3 = document.querySelector('#inputvalue3');
 const inputelement4 = document.querySelector('#inputvalue4');
 let font = 25;
 let imagesource = "";
-let deafultfont1 = true
+let deafultfont1 = true;
+var meme11 = document.getElementById('meme11');
+var meme12 = document.getElementById('meme12');
+var meme13 = document.getElementById('meme13');
+var meme14 = document.getElementById('meme14');
+var meme15 = document.getElementById('meme15');
+var meme16 = document.getElementById('meme16');
+var canvascenterdiv = document.getElementById("centercanvasdiv");
 
 function deafultfont() {
     deafultfont1 = true;
@@ -175,6 +182,29 @@ function SelecteButt() {
     imagesource = "meme16.png";
     clearinputvalue();
     hideinputfield34();
-    drawImage()
+    drawImage();
+}
+
+
+if(/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)){
+    meme11.width = meme11.width/2;
+    meme11.height = meme11.height/2;
+
+    meme12.width = meme12.width/2;
+    meme12.height = meme12.height/2;
+
+    meme13.width = meme13.width/2;
+    meme13.height = meme13.height/2;
+
+    meme14.width = meme14.width/2;
+    meme14.height = meme14.height/2;
+
+    meme15.width = meme15.width/2;
+    meme15.height = meme15.height/2;
+
+    meme16.width = meme16.width/2;
+    meme16.height = meme16.height/2;
+
+    canvascenterdiv.classList.remove("example-div");
 }
 
