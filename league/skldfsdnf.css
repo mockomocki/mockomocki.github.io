@@ -1,0 +1,27 @@
+.social-media{
+    display: flex;
+    justify-content: center;
+}
+
+.image {
+    width: 100%; /* Image container is now full-width */
+}
+
+.img-with-text {
+    text-align: justify;
+    width: 120px;
+}
+
+.img-with-text img {
+    display: block;
+    margin: 0 auto;
+}
+
+.image img {
+    margin: 10px auto; /* "auto" will center block elements */
+    display: block; /* Set images to be "block" so they obey our auto margin */
+}
+
+h1 {
+    margin-right: 100px;
+}
