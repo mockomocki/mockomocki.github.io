@@ -1,5 +1,5 @@
 const cors = "https://cors-anywhere.herokuapp.com/";
-const apikey = "?api_key=RGAPI-dc5fc7a2-c9ec-49db-bf59-14455527ed65";
+const apikey = "?api_key= RGAPI-993c695b-7042-462b-b3b7-035495b863e1";
 const yes= "lol/spectator/v4/active-games/by-summoner/";
 const url = "https://eun1.api.riotgames.com/";
 const getname = "/lol/summoner/v4/summoners/by-name/";
